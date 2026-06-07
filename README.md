@@ -17,7 +17,7 @@ You type `/yc-4` and Claude reads the full transcript of "How to Talk to Users",
 
 ## What's Inside
 
-**54 full transcripts** from YC's official library. Not summaries. Not notes. The actual words.
+**56 full transcripts** from YC's official library and AI Native Company lectures. Not summaries. Not notes. The actual words.
 
 | Skill | What it does | Lectures |
 |-------|-------------|----------|
@@ -29,7 +29,7 @@ You type `/yc-4` and Claude reads the full transcript of "How to Talk to Users",
 | `/yc-6` | Growing and monetizing | KPIs, business models, metrics |
 | `/yc-7` | Fundraising | How fundraising works, applying to YC |
 | `/yc-8` | Stories from great founders | Zuckerberg, Wojcicki |
-| `/yc-ai` | AI Startup School | Karpathy, Altman, Musk, Nadella + 11 more |
+| `/yc-ai` | AI Native Company / AI Startup School | Karpathy, Garry Tan, Diana Hu, Altman, Musk, Nadella + 11 more |
 | `/pg` | Paul Graham Guru | 14 essays. Ask anything, get PG's voice. |
 
 Each skill has its own `references/` folder with the full transcripts co-located. The skill **reads its references** → **presents frameworks** → **analyzes your project** → **interactive workbook with AskUserQuestion** → **saves assessment**.
@@ -118,7 +118,7 @@ skills/
   ...
   ai-startup-school/
     SKILL.md
-    references/           ← 15 AI leader transcripts
+    references/           ← 17 AI leader / AI Native Company transcripts
   guru-paul-graham/
     SKILL.md
     references/           ← 14 PG essays
@@ -128,7 +128,7 @@ scripts/                  ← scraper
 
 ## Data Sources
 
-All transcripts extracted from `ycombinator.com/library` server-rendered JSON. Paul Graham essays from `paulgraham.com`. Scraper included: `scripts/scrape_yc_library.py`.
+Most transcripts extracted from `ycombinator.com/library` server-rendered JSON; the two AI Native Company additions come from YouTube transcripts. Paul Graham essays from `paulgraham.com`. Scraper included: `scripts/scrape_yc_library.py`.
 
 ```bash
 # Re-scrape to update
