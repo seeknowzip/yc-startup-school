@@ -1,0 +1,4 @@
+interface:
+  display_name: "YC 4 — Planning an MVP"
+  short_description: "Plan user interviews and MVP scope"
+  default_prompt: "Use $yc-4-planning-an-mvp to review my MVP scope."

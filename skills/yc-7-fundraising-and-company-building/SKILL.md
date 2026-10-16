@@ -1,94 +1,40 @@
 ---
 name: yc-7-fundraising-and-company-building
-description: |
-  This skill should be used when the user asks about "펀딩", "투자", "fundraising", "YC 지원", "YC 합격", "SAFE", "투자 용어", "엔젤 투자", "/yc-7", "어떻게 투자받나", "how fundraising works", "YC application", "startup legal terms", "cap table", "equity dilution". YC Startup School Module 7: Fundraising and Company Building — Brad Flora on how startup fundraising works and Dalton Caldwell on how to apply and succeed at YC.
+description: "Apply YC Startup School module 7 lectures to fundraising: whether and when to raise, SAFEs, valuation and basic startup legal and financing vocabulary, the investor process, and YC applications. Use when someone prepares to raise money, reviews financing terms, or applies to YC, or asks for the module 7 workbook."
 ---
 
 # YC Startup School — Module 7: Fundraising and Company Building
 
-## Official Curriculum
+Connect fundraising to the milestone it funds and review application claims against evidence. Verify current YC terms, deadlines, and jurisdiction-specific legal details from current primary sources when needed; dated lectures do not establish current terms.
 
-- 📺 **How Startup Fundraising Works in 2022** — Brad Flora (YC Partner) ✅ transcript available
-- 📺 **How to Apply and Succeed at Y Combinator** — Dalton Caldwell (YC Managing Director) ✅ transcript available
+## Respond to the request
 
-## Instructions
+- **Question or explanation:** Answer the actual question using relevant source material. Do not start a workbook, score the user, or save a file by default.
+- **Situation review:** Analyze the supplied idea, artifact, or evidence first. Ask only for missing information that materially changes the judgment. Distinguish observations, assumptions, and suggested next steps.
+- **Guided exercise:** When requested, use [the workbook](references/workbook.md). Follow the requested pace and output format rather than imposing an interview on ordinary questions.
 
-1. Read ALL transcript files from `${CLAUDE_PLUGIN_ROOT}/skills/yc-7-fundraising-and-company-building/references/`:
-   - `how-startup-fundraising-works.md` — Brad Flora (YC Partner)
-   - `how-to-apply-and-succeed-at-yc.md` — Dalton Caldwell (YC Managing Director)
-2. Present key frameworks from each lecture with speaker attribution
-3. Assess the user's fundraising stage, YC interest, and legal/cap table hygiene
-4. Generate a workbook-style self-assessment derived from the lectures
-5. Save to `knowledge/yc-startup-school/module-7-assessment.md`
-6. Run the interactive Self-Assessment Workbook:
-   - Ask each question ONE AT A TIME using AskUserQuestion
-   - Wait for the user's response before asking the next question
-   - After each answer, provide brief feedback connecting their response to the module's frameworks
-   - After all questions, synthesize their answers into a personalized assessment
-7. Save the completed assessment (questions + answers + synthesis) to the appropriate knowledge path
+A narrow request is complete when its question or review is answered with supporting evidence and material limits. A broader synthesis may require several sources; a full lecture summary requires reading the full available text. Do not extend a completed answer into additional modules or exercises unless the request calls for them. Do not append an operating plan, implementation steps, or legal or tax mechanics to a narrow question unless the user asked or the answer depends on them; when a legal or tax step matters, say what to confirm with a professional. Ask follow-up questions only when the answer would change the judgment.
 
-## Key Frameworks
+## Find and use evidence
 
-### How Startup Fundraising Works (Brad Flora)
-- **The fundraising journey**: Bootstrapping → pre-seed (friends/angels) → seed (institutional) → Series A (VC)
-- **SAFE mechanics**: Simple Agreement for Future Equity — valuation cap, discount, MFN clause. Post-money SAFE is the current standard.
-- **Valuation cap**: The price ceiling at which your SAFE converts. Lower = better for investor. Higher = you believe more in your future value.
-- **Priced rounds vs. convertible**: SAFEs and notes are faster/cheaper. Priced rounds set a definitive valuation with preferred stock.
-- **Investor psychology**: Investors fund lines, not dots — show consistent trajectory. Warm intro > cold outreach by 10x.
-- **Fundraising process**: Build the list → get intros → run parallel conversations → create urgency → close → wire transfer before celebrating
-- **Common mistakes**: Raising too early (no traction), raising too much (dilution + distraction), taking bad money (misaligned investors)
+Every source listed below contains its lecture or essay text. If a passage you need is missing or unclear, say so rather than reconstructing the lecture from notes or memory.
 
-### How to Apply and Succeed at YC (Dalton Caldwell)
-- **What YC actually looks for**: Founder quality first, idea second. "Do these founders understand their users? Are they building something people want?"
-- **Application questions that matter most**: "What are you building?" (one clear sentence), "Why now?", "What's your traction?"
-- **Common application mistakes**: Vague descriptions / overselling the market / no traction or fake traction / unclear why these founders
-- **The YC interview**: 10 minutes, fast-paced, about your business. Not a pitch — a conversation. Expect hard questions about your weakest assumptions.
-- **When to apply**: Apply even before you feel ready. YC invests in people who can figure it out.
-- **What YC provides**: $500K, access to alumni network, YC brand, Demo Day — the network compounds over decades
+Choose sources from the source map below by topic. Search for keywords, then read the matching passages with enough surrounding context to interpret them. Expand reading when evidence is incomplete or conflicting. There is no fixed source-count limit or requirement to read every file.
 
-## Output Format
+Attribute each claim to the actual speaker or author, and cite the lecture or essay title with the source URL from the file's frontmatter (`youtube_url` or `source_url`) (add a timestamp for caption sources). Local file paths mean nothing to the user. Check exact wording in the source before quoting, and keep the conditions attached to any number you cite (time period, stage, sample); when answering in another language, keep quotations short and mark translations as yours. Distinguish source advice from your application to the user's circumstances. The user may be founding a company, running a solo or bootstrapped business, or starting a new product inside an existing company; preserve their goals rather than treating YC's assumption of a startup aiming for very fast growth, often venture-funded, as a universal requirement.
 
-### Part 1: Module Content
-- The fundraising journey stages and when to move between them
-- SAFE mechanics explained with a concrete conversion example
-- YC application success factors and the questions that matter most
-- The fundraising process: managing parallel conversations
+Keep the type of each claim: an example, benchmark, recommendation, definition, or requirement stays what the source made it, with qualifiers such as "say", "ideally", "typical", or "one exception" intact. Do not add exclusive conditions or time limits the source does not state. When you calculate, state the units, period, cohort, and starting point, and recheck derived comparisons as well as headline numbers; keep ratios such as retention distinct from growth rates. Base your application on the user's facts and the sources: state assumptions as conditions, and leave out general claims about markets, law, or tax practice that neither supports. Labeling a statement as your interpretation does not make an unsupported fact acceptable. Before finishing, check that your recommendation and closing verdict keep the qualifications you reported from the source; a correctly qualified quotation does not support an unqualified application, and the sources do not license ranking risks or approving choices they never address.
 
-### Part 2: Apply to Your Situation
-- Fundraising readiness: where are you in the journey and what's the next milestone?
-- YC application fit: traction, one-sentence description, why these founders?
-- Cap table and legal hygiene: IP assigned, incorporation clean, vesting in place?
-- SAFE vs. priced round decision for current stage
+[Reading notes](references/reading-notes.md) preserve imported concept summaries for locating themes during broad study. They are secondary aids, not proof of lecture content, current numbers, or mandatory behavior. Prefer the original material and verify changing facts from current primary sources when the answer depends on them.
 
-### Part 3: Interactive Workbook (AskUserQuestion)
-- Ask questions ONE AT A TIME — do not list all questions at once
-- Use AskUserQuestion tool for each question
-- After each answer, give 1-2 sentence feedback connecting to the module's framework
-- Provide multiple choice options where appropriate to make it easier to answer
-- After completing all questions, generate a synthesis:
-  - Overall readiness score (1-10) for this module's topic
-  - Top strength identified from answers
-  - Top gap identified from answers
-  - One specific action item
-- Save completed workbook to `knowledge/yc-startup-school/module-7-workbook.md`
+## Source map
 
-Questions to ask interactively:
-1. What is your one-sentence company description — would it make sense to a YC partner in 10 seconds?
-2. What is your current growth rate, and what traction can you show to back it up?
-3. Why now? What changed in the world that makes this the right moment?
-4. What stage of funding are you at, and what milestone will you hit before your next raise?
-5. Do you understand your cap table? Can you explain it simply?
-6. Have you decided between SAFE and priced round? What drove that decision?
-7. Who are your target investors and how will you get warm introductions?
-8. Have you assigned IP to your company? Is your incorporation paperwork clean?
-9. If applying to YC: what is the weakest part of your application right now?
+- [how-startup-fundraising-works.md](references/how-startup-fundraising-works.md) — Brad Flora (YC Partner) — seven fundraising myths: raising before starting, needing to look impressive, SAFEs (valuation cap, discount) as fast and cheap, control, networks, rejection.
+- [how-to-apply-and-succeed-at-yc.md](references/how-to-apply-and-succeed-at-yc.md) — Dalton Caldwell (YC Managing Director) — why to apply despite "too early" doubts, application tips, how applications are reviewed and interview odds, preparing for the interview.
 
-## Bonus Content
+## Optional related sources
 
-The bonus folder contains a foundational legal vocabulary lecture relevant to this module:
-- `${CLAUDE_PLUGIN_ROOT}/references/bonus/starting-a-company-the-key-terms-you-should-know.md` — Cap table, common vs. preferred stock, option pool, term sheet components, key documents
+Read these only when their topic is needed for the request.
 
-## References
-
-- `${CLAUDE_PLUGIN_ROOT}/skills/yc-7-fundraising-and-company-building/references/how-startup-fundraising-works.md` — Brad Flora (YC Partner)
-- `${CLAUDE_PLUGIN_ROOT}/skills/yc-7-fundraising-and-company-building/references/how-to-apply-and-succeed-at-yc.md` — Dalton Caldwell (YC Managing Director)
+A foundational legal vocabulary lecture relevant to this module:
+- [starting-a-company-the-key-terms-you-should-know.md](references/starting-a-company-the-key-terms-you-should-know.md) — Dalton Caldwell (YC) — plain definitions of MVP, VCs and angels, profit and burn, seed and Series A/B/C, PMF, bootstrapping, convertible notes, SAFEs, equity, TAM, valuation, IPO, ARR.

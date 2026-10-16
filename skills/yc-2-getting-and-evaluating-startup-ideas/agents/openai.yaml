@@ -1,0 +1,4 @@
+interface:
+  display_name: "YC 2 — Getting and Evaluating Startup Ideas"
+  short_description: "Evaluate an idea against YC lectures"
+  default_prompt: "Use $yc-2-getting-and-evaluating-startup-ideas to evaluate my idea."

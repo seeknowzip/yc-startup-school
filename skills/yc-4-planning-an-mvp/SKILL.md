@@ -1,98 +1,42 @@
 ---
 name: yc-4-planning-an-mvp
-description: |
-  This skill should be used when the user asks about "MVP", "유저 인터뷰", "talk to users", "사용자 대화", "제품 개발", "프로토타입", "MVP 만들기", "/yc-4", "product development", "user research", "사용자 인터뷰", or any questions about user research, building an MVP, or product-market fit iteration. YC Startup School Module 4: Planning an MVP — Gustaf Alströmer on talking to users, Michael Seibel on building MVP, and Diana Hu on technical founder principles.
+description: "Apply YC Startup School module 4 lectures to customer interviews and MVP planning: who to talk to, interview questions, MVP scope and deadline, what to cut, and technical choices for speed, including AI-assisted (vibe) coding of a first version. Use when someone plans or reviews user research or a first version, including a new product or feature inside a company, or asks for the module 4 workbook."
 ---
 
 # YC Startup School — Module 4: Planning an MVP
 
-## Official Curriculum
+Connect interview questions and MVP scope to the problem being tested. For interview review, inspect the supplied questions before requesting more context; do not turn a narrow review into a full startup assessment.
 
-- 📺 **How to Talk to Users** — Gustaf Alströmer (YC Group Partner, ex-Airbnb) ✅ transcript available
-- 📺 **How to Build an MVP** — Michael Seibel (YC Group Partner) ✅ transcript available
-- 📖 **Product Development Cycle Fundamentals** — Michael Seibel ✅ transcript available as `tips-for-technical-startup-founders.md` (Diana Hu, YC Group Partner)
+## Respond to the request
 
-## Instructions
+- **Question or explanation:** Answer the actual question using relevant source material. Do not start a workbook, score the user, or save a file by default.
+- **Situation review:** Analyze the supplied idea, artifact, or evidence first. Ask only for missing information that materially changes the judgment. Distinguish observations, assumptions, and suggested next steps.
+- **Guided exercise:** When requested, use [the workbook](references/workbook.md). Follow the requested pace and output format rather than imposing an interview on ordinary questions.
 
-1. Read ALL three transcript files from `${CLAUDE_PLUGIN_ROOT}/skills/yc-4-planning-an-mvp/references/`:
-   - `how-to-talk-to-users.md` — Gustaf Alströmer (YC Group Partner, ex-Airbnb)
-   - `how-to-build-an-mvp.md` — Michael Seibel (YC Group Partner)
-   - `tips-for-technical-startup-founders.md` — Diana Hu (YC Group Partner, ex-CTO Escher Reality/Niantic)
-2. Present key frameworks from each lecture with speaker attribution
-3. Assess the user's stage: ideating / building MVP / post-launch iterating
-4. Generate a workbook-style self-assessment derived from the lectures
-5. Save to `knowledge/yc-startup-school/module-4-assessment.md`
-6. Run the interactive Self-Assessment Workbook:
-   - Ask each question ONE AT A TIME using AskUserQuestion
-   - Wait for the user's response before asking the next question
-   - After each answer, provide brief feedback connecting their response to the module's frameworks
-   - After all questions, synthesize their answers into a personalized assessment
-7. Save the completed assessment (questions + answers + synthesis) to the appropriate knowledge path
+A narrow request is complete when its question or review is answered with supporting evidence and material limits. A broader synthesis may require several sources; a full lecture summary requires reading the full available text. Do not extend a completed answer into additional modules or exercises unless the request calls for them. Do not append an operating plan, implementation steps, or legal or tax mechanics to a narrow question unless the user asked or the answer depends on them; when a legal or tax step matters, say what to confirm with a professional. Ask follow-up questions only when the answer would change the judgment.
 
-## Key Frameworks
+## Find and use evidence
 
-### Talking to Users (Gustaf Alströmer)
-- **Golden rule**: Do NOT introduce your idea until the end or not at all — your job is to listen
-- **Who to talk to**: Network first (less honest but accessible), ex-colleagues, LinkedIn/Reddit/Slack communities
-- **Format**: Video/phone/in-person only — 5-minute video call > 5,000 survey responses
-- **6 core questions**: "Tell me how you do X today" / "What's hardest about X?" / "Why is it hard?" / "How often?" / "Why important?" / "What do you do to solve it today?"
-- **Questions NOT to ask**: "Will you use our product?" / "Which features?" / "How would a better product look?"
-- **Users have good problems, bad solutions**: Gmail users wanted split-screen (real problem: slowness). Airbnb guests wanted phone numbers (real problem: trust).
-- **Keep users engaged**: Slack/WhatsApp group, ship fast in response to feedback, exclusive access feeling
+Every source listed below contains its lecture or essay text. If a passage you need is missing or unclear, say so rather than reconstructing the lecture from notes or memory.
 
-### Building MVP (Michael Seibel)
-- **Pre-launch goals**: Get MVP built → in front of customers → start learning
-- **Solve "hair on fire" problems**: Problems users desperately need solved, not nice-to-haves
-- **Classic MVPs**: Airbnb (photos + listings only), Twitch (just Justin.tv streaming), Stripe (manual bank form processing behind clean API)
-- **Build quickly**: Every feature you don't build is time saved. Fear of launching is the biggest blocker — ship anyway
+Choose sources from the source map below by topic. Search for keywords, then read the matching passages with enough surrounding context to interpret them. Expand reading when evidence is incomplete or conflicting. There is no fixed source-count limit or requirement to read every file.
 
-### Technical Founder Principles (Diana Hu)
-- **3 stages**: Ideating (days) → Building MVP (weeks) → Launch/iterate (ongoing)
-- **Prototype fast**: Clickable Figma / terminal script — build in days, not weeks
-- **Do things that don't scale**: Manual onboarding, founders as support, DoorDash on plain HTML + Google Forms + Find My Friends
-- **90/10 solution** (Paul Buchheit): First version will be rewritten. Restrict scope to ship now. This is your startup superpower.
-- **Tech stack for iteration speed**: Facebook shipped on PHP. DoorDash launched on static HTML. Code will be rewritten.
-- **Don't hire too early**: At MVP stage, founders building = faster learning
+Attribute each claim to the actual speaker or author, and cite the lecture or essay title with the source URL from the file's frontmatter (`youtube_url` or `source_url`) (add a timestamp for caption sources). Local file paths mean nothing to the user. Check exact wording in the source before quoting, and keep the conditions attached to any number you cite (time period, stage, sample); when answering in another language, keep quotations short and mark translations as yours. Distinguish source advice from your application to the user's circumstances. The user may be founding a company, running a solo or bootstrapped business, or starting a new product inside an existing company; preserve their goals rather than treating YC's assumption of a startup aiming for very fast growth, often venture-funded, as a universal requirement.
 
-## Output Format
+Keep the type of each claim: an example, benchmark, recommendation, definition, or requirement stays what the source made it, with qualifiers such as "say", "ideally", "typical", or "one exception" intact. Do not add exclusive conditions or time limits the source does not state. When you calculate, state the units, period, cohort, and starting point, and recheck derived comparisons as well as headline numbers; keep ratios such as retention distinct from growth rates. Base your application on the user's facts and the sources: state assumptions as conditions, and leave out general claims about markets, law, or tax practice that neither supports. Labeling a statement as your interpretation does not make an unsupported fact acceptable. Before finishing, check that your recommendation and closing verdict keep the qualifications you reported from the source; a correctly qualified quotation does not support an unqualified application, and the sources do not license ranking risks or approving choices they never address.
 
-### Part 1: Module Content
-- The user interview loop: who → how to reach → what to ask → what NOT to ask → synthesize
-- MVP philosophy: hair-on-fire problems, not feature wish lists
-- Diana Hu's 3-stage framework with principles per stage
-- The 90/10 solution and "do things that don't scale" as startup superpowers
+[Reading notes](references/reading-notes.md) preserve imported concept summaries for locating themes during broad study. They are secondary aids, not proof of lecture content, current numbers, or mandatory behavior. Prefer the original material and verify changing facts from current primary sources when the answer depends on them.
 
-### Part 2: Apply to Your Situation
-- Stage: ideating / building MVP / post-launch?
-- User interview count: 0 / 1-5 / 5-20 / ongoing?
-- Prototype/MVP status and time spent building so far
-- Biggest blocker: talking to users vs. building vs. fear of shipping?
-- Tech stack: optimized for speed or prestige?
+## Source map
 
-### Part 3: Interactive Workbook (AskUserQuestion)
-- Ask questions ONE AT A TIME — do not list all questions at once
-- Use AskUserQuestion tool for each question
-- After each answer, give 1-2 sentence feedback connecting to the module's framework
-- Provide multiple choice options where appropriate to make it easier to answer
-- After completing all questions, generate a synthesis:
-  - Overall readiness score (1-10) for this module's topic
-  - Top strength identified from answers
-  - Top gap identified from answers
-  - One specific action item
-- Save completed workbook to `knowledge/yc-startup-school/module-4-workbook.md`
+- [how-to-talk-to-users.md](references/how-to-talk-to-users.md) — Gustaf Alströmer — who to talk to, interviewing potential customers, follow-up questions and questions to avoid, MVP prototype interview sessions.
+- [how-to-build-an-mvp.md](references/how-to-build-an-mvp.md) — Michael Seibel — pre-launch goals, fear of launching, Airbnb, Twitch, and Stripe MVPs (~7:15), hair-on-fire problems (~10:35), setting a deadline, writing and cutting the spec (~14:20) — English auto-generated captions with timestamps; not human-verified.
+- [tips-for-technical-startup-founders.md](references/tips-for-technical-startup-founders.md) — Diana Hu — the technical founder's role, principles for building the MVP, choosing a tech stack for speed, building tech at launch, moving into hiring.
 
-Questions to ask interactively:
-1. Name 5 people you could interview this week. What's stopping you from booking those calls today?
-2. In your last user conversation, did you introduce your idea early? What happened?
-3. What's the "how do you do X today?" answer — and does your MVP actually make that better?
-4. Is the problem "hair on fire"? Would users pay to fix it or cobble together workarounds?
-5. If you had to ship an MVP in 2 weeks using only what you can build today, what would you cut?
-6. Which "do things that don't scale" hack could get you your first 10 users without new code?
-7. What tech choices have you made for prestige/scale vs. shipping speed?
-8. What's one insight from a user interview that changed what you're building?
+## Optional related sources
 
-## References
+Read these only when their topic is needed for the request.
 
-- `${CLAUDE_PLUGIN_ROOT}/skills/yc-4-planning-an-mvp/references/how-to-talk-to-users.md` — Gustaf Alströmer
-- `${CLAUDE_PLUGIN_ROOT}/skills/yc-4-planning-an-mvp/references/how-to-build-an-mvp.md` — Michael Seibel
-- `${CLAUDE_PLUGIN_ROOT}/skills/yc-4-planning-an-mvp/references/tips-for-technical-startup-founders.md` — Diana Hu
+- [how-to-get-the-most-out-of-vibe-coding.md](references/how-to-get-the-most-out-of-vibe-coding.md) — Tom Blomfield (YC) — AI-assisted coding workflow: picking tools and planning, version control, tests, bug fixing, documentation, stack choice, frequent refactoring.
+
+Auto-generated caption files split sentences across short timestamped lines and may misspell names. Search single keywords and read the surrounding lines. Cite these passages with the video URL and timestamp; the user does not need to be told the text came from captions. Treat caption wording as approximate: paraphrase garbled passages instead of quoting them, and say so when an unclear passage matters to the answer.

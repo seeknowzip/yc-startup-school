@@ -69,7 +69,7 @@ def article_to_markdown(article: dict, series: str) -> str:
 
     # Build frontmatter
     lines = ["---"]
-    lines.append(f'title: "{title}"')
+    lines.append(f'title: {json.dumps(title, ensure_ascii=False)}')
     lines.append(f'author: "{author}"')
     lines.append(f'slug: "{slug}"')
     lines.append(f'series: "{series}"')
@@ -78,7 +78,7 @@ def article_to_markdown(article: dict, series: str) -> str:
         lines.append(f'youtube_url: "{youtube_url}"')
     lines.append(f'source_url: "{source_url}"')
     if description:
-        lines.append(f'description: "{description}"')
+        lines.append(f'description: {json.dumps(description, ensure_ascii=False)}')
     if categories:
         cats = ", ".join(f'"{c}"' for c in categories)
         lines.append(f"categories: [{cats}]")
@@ -91,7 +91,7 @@ def article_to_markdown(article: dict, series: str) -> str:
         for ch in chapters:
             if isinstance(ch, list) and len(ch) >= 2:
                 lines.append(f'  - time: {ch[0]}')
-                lines.append(f'    title: "{ch[1]}"')
+                lines.append(f'    title: {json.dumps(ch[1], ensure_ascii=False)}')
     has_transcript = len(transcript.strip()) > 0
     lines.append(f"has_transcript: {str(has_transcript).lower()}")
     lines.append("---")

@@ -1,0 +1,4 @@
+interface:
+  display_name: "YC 5 — Launching"
+  short_description: "Plan a launch and first customers"
+  default_prompt: "Use $yc-5-launching to plan how I launch and find my first customers."

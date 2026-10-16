@@ -1,0 +1,4 @@
+interface:
+  display_name: "YC Paul Graham"
+  short_description: "Apply Paul Graham's startup essays"
+  default_prompt: "Use $yc-pg to apply Paul Graham's essays to my situation."

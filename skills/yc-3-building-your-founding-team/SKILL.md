@@ -1,98 +1,38 @@
 ---
 name: yc-3-building-your-founding-team
-description: |
-  This skill should be used when the user asks about "공동창업자", "co-founder", "지분", "equity", "equity split", "vesting", "창업팀", "공동창업자 찾기", "공동창업자 관계", "/yc-3", "co-founder breakup", "지분 배분", or any questions about co-founder selection, equity distribution, or founding team dynamics. YC Startup School Module 3: Building Your Founding Team — the #1 reason startups fail at YC is co-founder breakups.
+description: "Apply YC Startup School module 3 lectures to the founding team: finding and evaluating co-founders, roles and who is CEO, conflict and working together, equity splits, and vesting. Use when someone asks how to find, choose, work with, or split equity with a co-founder, or asks for the module 3 workbook."
 ---
 
 # YC Startup School — Module 3: Building Your Founding Team
 
-## Official Curriculum
+Assess complementary capabilities, goals, working experience, roles, and incentives. YC equity and vesting examples are contextual advice, not universal legal requirements or reasons to reject solo founding.
 
-- 📺 **All About Co-Founders** — Catheryn Li & Divya Bhat (YC) ✅ transcript as `keys-to-successful-co-founder-relationships.md`
-- 📺 **Co-Founder Mistakes That Kill Companies** — Dalton Caldwell & Michael Seibel ❌ no transcript (but `co-founder-equity-mistakes-to-avoid.md` by Michael Seibel covers the equity mistake patterns)
-- 📺 **How to Split Equity Among Co-Founders** — Michael Seibel ✅ transcript as `co-founder-equity-mistakes-to-avoid.md`
-- 📺 **How to Work Together** — Kevin Hale ❌ no transcript (but `how-to-find-a-co-founder.md` by Harj Taggar covers finding and working with co-founders)
+## Respond to the request
 
-## Instructions
+- **Question or explanation:** Answer the actual question using relevant source material. Do not start a workbook, score the user, or save a file by default.
+- **Situation review:** Analyze the supplied idea, artifact, or evidence first. Ask only for missing information that materially changes the judgment. Distinguish observations, assumptions, and suggested next steps.
+- **Guided exercise:** When requested, use [the workbook](references/workbook.md). Follow the requested pace and output format rather than imposing an interview on ordinary questions.
 
-1. Read ALL three transcript files from `${CLAUDE_PLUGIN_ROOT}/skills/yc-3-building-your-founding-team/references/`:
-   - `keys-to-successful-co-founder-relationships.md` — Catheryn Li & Divya Bhat (YC)
-   - `co-founder-equity-mistakes-to-avoid.md` — Michael Seibel (YC Group Partner)
-   - `how-to-find-a-co-founder.md` — Harj Taggar (YC Group Partner)
-2. Present key frameworks from each lecture with speaker attribution
-3. Assess the user's co-founder situation: solo / searching / paired — and equity/vesting status
-4. Generate a workbook-style self-assessment derived from the lectures
-5. Save to `knowledge/yc-startup-school/module-3-assessment.md`
-6. Run the interactive Self-Assessment Workbook:
-   - Ask each question ONE AT A TIME using AskUserQuestion
-   - Wait for the user's response before asking the next question
-   - After each answer, provide brief feedback connecting their response to the module's frameworks
-   - After all questions, synthesize their answers into a personalized assessment
-7. Save the completed assessment (questions + answers + synthesis) to the appropriate knowledge path
+A narrow request is complete when its question or review is answered with supporting evidence and material limits. A broader synthesis may require several sources; a full lecture summary requires reading the full available text. Do not extend a completed answer into additional modules or exercises unless the request calls for them. Do not append an operating plan, implementation steps, or legal or tax mechanics to a narrow question unless the user asked or the answer depends on them; when a legal or tax step matters, say what to confirm with a professional. Ask follow-up questions only when the answer would change the judgment.
 
-## Key Frameworks
+## Find and use evidence
 
-### Finding a Co-Founder (Harj Taggar)
-- **Why you need one**: More work done, emotional support, pattern matching. Facebook, Apple — both had co-founders
-- **Solo founder exception**: Only if (1) high-conviction domain expertise AND (2) technical — then build and find co-founder in parallel
-- **What to look for**: Stress tolerance first (most important), aligned high-level goals, complementary trajectory over current skills
-- **Where to find**: People you already know first — never assume they're unavailable; always ask. Also: YC co-founder matching, hackathons, open source
-- **3 breakup causes**: Loss of mutual respect / both wanting CEO title / different work ethic expectations
-- **Maintenance**: Regular 1-on-1s, small pressure releases vs. one big confrontation
+Every source listed below contains its lecture or essay text. If a passage you need is missing or unclear, say so rather than reconstructing the lecture from notes or memory.
 
-### Keys to Successful Co-Founder Relationships (Catheryn Li & Divya Bhat)
-- Explicit communication on roles, expectations, and decision-making authority from day one
-- Regular check-ins — don't wait for problems to surface in product or investor meetings
-- Alignment on the "why": personal goals, life circumstances, exit expectations
+Choose sources from the source map below by topic. Search for keywords, then read the matching passages with enough surrounding context to interpret them. Expand reading when evidence is incomplete or conflicting. There is no fixed source-count limit or requirement to read every file.
 
-### Equity (Michael Seibel)
-- **Core principle**: Be generous with co-founder equity — it motivates future work, not rewards past contribution
-- **Default to near-equal splits**: Trying to calculate the "perfect" split is the wrong mental model
-- **Vesting + cliff are non-negotiable**: 4-year vesting, 1-year cliff — applies to ALL founders including CEO
-- **Smallest founding team**: Minimum people who can build MVP + get it to customers + start learning
-- **CEO must retain firing rights** regardless of equity split
-- **Pre-PMF breakup guidelines**: Before 1-year cliff → 2-5% token equity. After cliff but pre-PMF → no more than 5% retained
-- **Bad reasons for unequal splits**: "I had the idea" / "I started earlier" / "I raised money" / "I launched first" / "I'm more experienced"
+Attribute each claim to the actual speaker or author, and cite the lecture or essay title with the source URL from the file's frontmatter (`youtube_url` or `source_url`) (add a timestamp for caption sources). Local file paths mean nothing to the user. Check exact wording in the source before quoting, and keep the conditions attached to any number you cite (time period, stage, sample); when answering in another language, keep quotations short and mark translations as yours. Distinguish source advice from your application to the user's circumstances. The user may be founding a company, running a solo or bootstrapped business, or starting a new product inside an existing company; preserve their goals rather than treating YC's assumption of a startup aiming for very fast growth, often venture-funded, as a universal requirement.
 
-## Output Format
+Keep the type of each claim: an example, benchmark, recommendation, definition, or requirement stays what the source made it, with qualifiers such as "say", "ideally", "typical", or "one exception" intact. Do not add exclusive conditions or time limits the source does not state. When you calculate, state the units, period, cohort, and starting point, and recheck derived comparisons as well as headline numbers; keep ratios such as retention distinct from growth rates. Base your application on the user's facts and the sources: state assumptions as conditions, and leave out general claims about markets, law, or tax practice that neither supports. Labeling a statement as your interpretation does not make an unsupported fact acceptable. Before finishing, check that your recommendation and closing verdict keep the qualifications you reported from the source; a correctly qualified quotation does not support an unqualified application, and the sources do not license ranking risks or approving choices they never address.
 
-### Part 1: Module Content
-- Why co-founder failure is the #1 startup killer at YC
-- The 3 qualities to look for (stress tolerance, aligned goals, complementary trajectory)
-- Michael Seibel's equity philosophy: generosity as strategic tool
-- Vesting/cliff mechanics and why they protect everyone
-- Pre-PMF breakup guidelines with specific percentages
+[Reading notes](references/reading-notes.md) preserve imported concept summaries for locating themes during broad study. They are secondary aids, not proof of lecture content, current numbers, or mandatory behavior. Prefer the original material and verify changing facts from current primary sources when the answer depends on them.
 
-### Part 2: Apply to Your Situation
-- Co-founder status: solo / searching / paired?
-- If paired: equity split and vesting structure in place? Worked under stress together?
-- Have you explicitly discussed goals, work expectations, CEO authority?
-- Any unspoken resentments building? When was the last frank 1-on-1?
+## Source map
 
-### Part 3: Interactive Workbook (AskUserQuestion)
-- Ask questions ONE AT A TIME — do not list all questions at once
-- Use AskUserQuestion tool for each question
-- After each answer, give 1-2 sentence feedback connecting to the module's framework
-- Provide multiple choice options where appropriate to make it easier to answer
-- After completing all questions, generate a synthesis:
-  - Overall readiness score (1-10) for this module's topic
-  - Top strength identified from answers
-  - Top gap identified from answers
-  - One specific action item
-- Save completed workbook to `knowledge/yc-startup-school/module-3-workbook.md`
+- [keys-to-successful-co-founder-relationships.md](references/keys-to-successful-co-founder-relationships.md) — Catheryn Li & Divya Bhat (YC) — finding and vetting a co-founder via YC matching and trial projects (~13:40), equity split (~14:40), topics to settle before committing (~19:00), trust, decision-making, communication styles — English auto-generated captions with timestamps; not human-verified.
+- [co-founder-equity-mistakes-to-avoid.md](references/co-founder-equity-mistakes-to-avoid.md) — Michael Seibel (YC Group Partner) — advice he scopes to pre-product-market-fit tech software startups expecting VC funding: splitting equity generously and near-equally, co-founder breakups and vesting, bad reasons for unequal splits, common bad equity advice.
+- [how-to-find-a-co-founder.md](references/how-to-find-a-co-founder.md) — Harj Taggar (YC Group Partner) — whether to go solo, what to look for, where to find co-founders, starting to work together, why co-founders break up and how to avoid it.
+- [co-founder-mistakes-that-kill-companies.md](references/co-founder-mistakes-that-kill-companies.md) — Dalton Caldwell & Michael Seibel — founder-submitted mistakes: untested relationships and conflict avoidance (~2:00–4:00), delayed breakups, near-equal split without a 50/50 deadlock (~5:20), adding co-founders after the idea or raise (~6:00) — English auto-generated captions with timestamps; not human-verified.
+- [how-to-work-together.md](references/how-to-work-together.md) — Kevin Hale — handling co-founder conflict: Gottman's four horsemen, dividing ownership (~5:00), attachment styles (~8:00), a decision framework (~12:00), observation-feeling-need-request feedback (~14:00), level-three conversations (~24:00) — English auto-generated captions with timestamps; not human-verified.
 
-Questions to ask interactively:
-1. Name 3 people you'd want as co-founder — have you actually asked them? (Not assumed they're unavailable)
-2. Describe a stressful situation with your potential co-founder. How did they handle it?
-3. Have you explicitly discussed: why you both want to start, what success looks like, how hard you'll work?
-4. What's your current equity split — could each co-founder stay motivated in year 3 when things are hard?
-5. Do you have 4-year vesting with 1-year cliff in place for ALL founders including yourself?
-6. Is your founding team the minimum number to build, ship, and learn?
-7. Which bad reasons (idea / earlier / raised / launched) have you used to justify your split?
-8. When did you last have a frank 1-on-1 with your co-founder about how the relationship is going?
-
-## References
-
-- `${CLAUDE_PLUGIN_ROOT}/skills/yc-3-building-your-founding-team/references/keys-to-successful-co-founder-relationships.md` — Catheryn Li & Divya Bhat (YC)
-- `${CLAUDE_PLUGIN_ROOT}/skills/yc-3-building-your-founding-team/references/co-founder-equity-mistakes-to-avoid.md` — Michael Seibel (YC Group Partner)
-- `${CLAUDE_PLUGIN_ROOT}/skills/yc-3-building-your-founding-team/references/how-to-find-a-co-founder.md` — Harj Taggar (YC Group Partner)
+Auto-generated caption files split sentences across short timestamped lines and may misspell names. Search single keywords and read the surrounding lines. Cite these passages with the video URL and timestamp; the user does not need to be told the text came from captions. Treat caption wording as approximate: paraphrase garbled passages instead of quoting them, and say so when an unclear passage matters to the answer.

@@ -1,92 +1,37 @@
 ---
 name: yc-2-getting-and-evaluating-startup-ideas
-description: |
-  This skill should be used when the user asks about "아이디어 검증", "스타트업 아이디어", "startup ideas", "tarpit", "아이디어 찾는 방법", "좋은 아이디어인지", "/yc-2", "피벗", "아이디어 평가", "idea evaluation", or any question about generating, evaluating, or pivoting startup ideas. YC Startup School Module 2: Getting and Evaluating Startup Ideas — Jared Friedman's systematic framework backed by patterns from thousands of YC companies, plus PG's canonical essay.
+description: "Apply YC Startup School module 2 lectures to startup and new-product ideas: finding and evaluating ideas, the problem, founder fit, market and competition, and when to pivot. Use when someone judges, compares, generates, or reconsiders an idea, including a new product inside a company, or asks for the module 2 workbook."
 ---
 
 # YC Startup School — Module 2: Getting and Evaluating Startup Ideas
 
-## Official Curriculum
+Examine the customer problem, existing behavior, founder insight, market assumptions, and evidence needed for the next decision. Treat idea scores as optional heuristics, not forecasts.
 
-- 📺 **How to Get and Evaluate Startup Ideas** — Jared Friedman (YC Partner) ✅ transcript available
-- 📖 **How to Get Startup Ideas** — Paul Graham ✅ transcript available as `pg-how-to-get-startup-ideas.md` (also via `/pg` skill)
-- 📺 **All About Pivoting** — Dalton Caldwell ❌ no transcript (video only)
-- 📺 **Where Do Great Startup Ideas Come From?** — Dalton Caldwell & Michael Seibel ❌ no transcript (video only)
+## Respond to the request
 
-## Instructions
+- **Question or explanation:** Answer the actual question using relevant source material. Do not start a workbook, score the user, or save a file by default.
+- **Situation review:** Analyze the supplied idea, artifact, or evidence first. Ask only for missing information that materially changes the judgment. Distinguish observations, assumptions, and suggested next steps.
+- **Guided exercise:** When requested, use [the workbook](references/workbook.md). Follow the requested pace and output format rather than imposing an interview on ordinary questions.
 
-1. Read ALL transcript files from `${CLAUDE_PLUGIN_ROOT}/skills/yc-2-getting-and-evaluating-startup-ideas/references/`:
-   - `how-to-get-startup-ideas.md` — Jared Friedman (YC Partner)
-   - `pg-how-to-get-startup-ideas.md` — Paul Graham
-2. Present the key frameworks and mental models with speaker attribution
-3. If the user has an idea, score it on the 4-criteria formula and identify which recipe it came from
-4. Generate a workbook-style self-assessment derived from the lectures
-5. Save to `knowledge/yc-startup-school/module-2-assessment.md`
-6. Run the interactive Self-Assessment Workbook:
-   - Ask each question ONE AT A TIME using AskUserQuestion
-   - Wait for the user's response before asking the next question
-   - After each answer, provide brief feedback connecting their response to the module's frameworks
-   - After all questions, synthesize their answers into a personalized assessment
-7. Save the completed assessment (questions + answers + synthesis) to the appropriate knowledge path
+A narrow request is complete when its question or review is answered with supporting evidence and material limits. A broader synthesis may require several sources; a full lecture summary requires reading the full available text. Do not extend a completed answer into additional modules or exercises unless the request calls for them. Do not append an operating plan, implementation steps, or legal or tax mechanics to a narrow question unless the user asked or the answer depends on them; when a legal or tax step matters, say what to confirm with a professional. Ask follow-up questions only when the answer would change the judgment.
 
-## Key Frameworks
+## Find and use evidence
 
-- **4 most common mistakes**: Waiting for the perfect idea / jumping too fast / solution-in-search-of-a-problem (SISP) / believing good ideas are hard to find
-- **Idea quality score (4 criteria)**: Market size + Founder/market fit + Problem certainty + New insight — score each 1-10 and average
-- **Good idea signals**: Making something you personally want; recently became possible; similar companies succeed elsewhere
-- **4 dangerous filters to turn OFF**: Schlep blindness (hard to start) / boring / too ambitious / existing competitors
-- **Organic vs. explicit generation**: Organic ideas (noticed while living your life) are more reliable than brainstormed ones
-- **7 recipes ranked best to worst**:
-  1. Start from your unfair advantage (best)
-  2. Things you wish someone else would build
-  3. Things you'd work on for 10 years even if they failed
-  4. Recent changes in the world
-  5. Successful companies with new variants (default skeptical)
-  6. Crowdsource from domain experts
-  7. Broken industries (worst unless you have domain expertise)
-- **Tarpit ideas**: Problems that seem good but have hidden fatal flaws — distinguish from genuinely hard problems
-- **PG's organic method**: Work on things that interest you; be at the leading edge of a field; notice what's missing
+Every source listed below contains its lecture or essay text. If a passage you need is missing or unclear, say so rather than reconstructing the lecture from notes or memory.
 
-## Output Format
+Choose sources from the source map below by topic. Search for keywords, then read the matching passages with enough surrounding context to interpret them. Expand reading when evidence is incomplete or conflicting. There is no fixed source-count limit or requirement to read every file.
 
-### Part 1: Module Content
-- The 4 mistakes and why each is deadly (examples: Google, Facebook, Airbnb, Stripe/schlep blindness)
-- The idea quality score formula with scoring examples
-- The 4 filters to disable and how to recognize when you're applying them
-- The 7 recipes with clear ranking and cautions
-- PG's organic idea-finding method alongside Friedman's systematic approach
+Attribute each claim to the actual speaker or author, and cite the lecture or essay title with the source URL from the file's frontmatter (`youtube_url` or `source_url`) (add a timestamp for caption sources). Local file paths mean nothing to the user. Check exact wording in the source before quoting, and keep the conditions attached to any number you cite (time period, stage, sample); when answering in another language, keep quotations short and mark translations as yours. Distinguish source advice from your application to the user's circumstances. The user may be founding a company, running a solo or bootstrapped business, or starting a new product inside an existing company; preserve their goals rather than treating YC's assumption of a startup aiming for very fast growth, often venture-funded, as a universal requirement.
 
-### Part 2: Apply to Your Situation
-If the user has an idea, score it on all 4 criteria (1-10):
-- Market size: Large companies doing something similar?
-- Founder/market fit: What is your unfair advantage?
-- Problem certainty: Personal experience with this pain?
-- New insight: What do you know that others don't or are wrong about?
+Keep the type of each claim: an example, benchmark, recommendation, definition, or requirement stays what the source made it, with qualifiers such as "say", "ideally", "typical", or "one exception" intact. Do not add exclusive conditions or time limits the source does not state. When you calculate, state the units, period, cohort, and starting point, and recheck derived comparisons as well as headline numbers; keep ratios such as retention distinct from growth rates. Base your application on the user's facts and the sources: state assumptions as conditions, and leave out general claims about markets, law, or tax practice that neither supports. Labeling a statement as your interpretation does not make an unsupported fact acceptable. Before finishing, check that your recommendation and closing verdict keep the qualifications you reported from the source; a correctly qualified quotation does not support an unqualified application, and the sources do not license ranking risks or approving choices they never address.
 
-Identify which recipe the idea came from. Flag any dangerous filters distorting evaluation. Check for tarpit warning signs.
+[Reading notes](references/reading-notes.md) preserve imported concept summaries for locating themes during broad study. They are secondary aids, not proof of lecture content, current numbers, or mandatory behavior. Prefer the original material and verify changing facts from current primary sources when the answer depends on them.
 
-### Part 3: Interactive Workbook (AskUserQuestion)
-- Ask questions ONE AT A TIME — do not list all questions at once
-- Use AskUserQuestion tool for each question
-- After each answer, give 1-2 sentence feedback connecting to the module's framework
-- Provide multiple choice options where appropriate to make it easier to answer
-- After completing all questions, generate a synthesis:
-  - Overall readiness score (1-10) for this module's topic
-  - Top strength identified from answers
-  - Top gap identified from answers
-  - One specific action item
-- Save completed workbook to `knowledge/yc-startup-school/module-2-workbook.md`
+## Source map
 
-Questions to ask interactively:
-1. What are 3 companies you've worked at? For each: what did you learn that others don't know / what seemed broken / what did they build in-house that others need?
-2. What product or service do you desperately wish existed for yourself?
-3. What recent technological or regulatory change created an opportunity that didn't exist 2 years ago?
-4. Which filter do you apply most often — hard / boring / ambitious / competitors? Give a concrete example.
-5. Score your current best idea on the 4 criteria. What's the weakest score and why?
-6. Can you name a successful company doing something similar in another geography or vertical?
-7. Who are domain experts in your network you could spend 30 minutes with to crowdsource problem ideas?
+- [how-to-get-startup-ideas.md](references/how-to-get-startup-ideas.md) — Jared Friedman (YC Partner) — four common idea mistakes, an averaged four-criterion idea score adapted from Dalton Caldwell (the transcript does not itemize the chapter titled "10 key questions"), signs of a good idea, four filters to turn off, seven recipes for generating ideas ranked best to worst.
+- [pg-how-to-get-startup-ideas.md](references/pg-how-to-get-startup-ideas.md) — Paul Graham — notice problems instead of brainstorming: ideas founders want, few users who want it badly, living in the future, schlep blindness, competition.
+- [where-do-great-startup-ideas-come-from.md](references/where-do-great-startup-ideas-come-from.md) — Dalton Caldwell & Michael Seibel — Airbnb, Coinbase, and Stripe origins: timing, 10x better than incumbents, founder experience of the problem, contrarian bets, distrusting early market-size math (~20:10) — English auto-generated captions with timestamps; not human-verified.
+- [all-about-pivoting.md](references/all-about-pivoting.md) — Dalton Caldwell — what a pivot is, opportunity cost and good or bad reasons to pivot (~2:00–9:00), when to pivot (~14:30), scoring a new idea on market size, founder-market fit, ease of starting, and early feedback, with YC cases such as Retool and Segment (~17:00–27:00) — English auto-generated captions with timestamps; not human-verified.
 
-## References
-
-- `${CLAUDE_PLUGIN_ROOT}/skills/yc-2-getting-and-evaluating-startup-ideas/references/how-to-get-startup-ideas.md` — Jared Friedman (YC Partner)
-- `${CLAUDE_PLUGIN_ROOT}/skills/yc-2-getting-and-evaluating-startup-ideas/references/pg-how-to-get-startup-ideas.md` — Paul Graham (also via `/pg` skill)
+Auto-generated caption files split sentences across short timestamped lines and may misspell names. Search single keywords and read the surrounding lines. Cite these passages with the video URL and timestamp; the user does not need to be told the text came from captions. Treat caption wording as approximate: paraphrase garbled passages instead of quoting them, and say so when an unclear passage matters to the answer.

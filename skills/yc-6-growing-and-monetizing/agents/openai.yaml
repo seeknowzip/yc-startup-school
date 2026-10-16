@@ -1,0 +1,4 @@
+interface:
+  display_name: "YC 6 — Growing and Monetizing"
+  short_description: "Metrics, growth, business model, pricing"
+  default_prompt: "Use $yc-6-growing-and-monetizing to choose the metrics I should track."

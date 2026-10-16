@@ -1,0 +1,4 @@
+interface:
+  display_name: "YC 8 — Stories from Great Founders"
+  short_description: "Lessons from Zuckerberg and Wojcicki"
+  default_prompt: "Use $yc-8-stories-from-great-founders to draw lessons for my work from these talks."

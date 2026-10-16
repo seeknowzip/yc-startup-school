@@ -1,0 +1,4 @@
+interface:
+  display_name: "YC 3 — Building Your Founding Team"
+  short_description: "Co-founders, roles, equity, vesting"
+  default_prompt: "Use $yc-3-building-your-founding-team to review how we're splitting equity."

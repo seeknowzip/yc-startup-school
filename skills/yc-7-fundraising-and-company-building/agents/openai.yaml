@@ -1,0 +1,4 @@
+interface:
+  display_name: "YC 7 — Fundraising and Company Building"
+  short_description: "Fundraising, SAFEs, YC applications"
+  default_prompt: "Use $yc-7-fundraising-and-company-building to check whether I'm ready to raise."

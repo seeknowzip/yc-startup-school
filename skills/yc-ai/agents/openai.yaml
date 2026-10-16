@@ -1,0 +1,4 @@
+interface:
+  display_name: "YC AI Startup School"
+  short_description: "Apply AI Startup School talks"
+  default_prompt: "Use $yc-ai to apply the AI Startup School talks to my AI product."

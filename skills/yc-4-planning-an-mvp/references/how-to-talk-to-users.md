@@ -6,7 +6,7 @@ series: "Startup School"
 youtube_id: "z1iF1c8w5Lg"
 youtube_url: "https://www.youtube.com/watch?v=z1iF1c8w5Lg"
 source_url: "https://www.ycombinator.com/library/Iq-how-to-talk-to-users"
-description: "YC often says "talk to your users", but actually doing that is surprisingly tricky. YC Group Partner Gustaf Alströmer gives advice on how to talk to both current and potential users, how to run a great user interview, and how to interpret the feedback in these conversations."
+description: "YC often says \"talk to your users\", but actually doing that is surprisingly tricky. YC Group Partner Gustaf Alströmer gives advice on how to talk to both current and potential users, how to run a great user interview, and how to interpret the feedback in these conversations."
 categories: ["Customers -> Talking to Users"]
 duration_seconds: 1051
 created_at: "2022-12-01T17:18:11.000Z"

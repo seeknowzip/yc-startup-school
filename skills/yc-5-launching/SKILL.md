@@ -1,100 +1,41 @@
 ---
 name: yc-5-launching
-description: |
-  This skill should be used when the user asks about "론칭", "첫 고객", "launching", "first customers", "cold email", "콜드 이메일", "/yc-5", "스타트업 출시", "고객 확보", "do things that don't scale", "launch strategy", "how to launch". YC Startup School Module 5: Launching — Kat Mañalac on launching repeatedly, Gustaf Alströmer on first customer acquisition, and PG's "Do Things That Don't Scale" essay.
+description: "Apply YC Startup School module 5 lectures and Paul Graham's Do Things That Don't Scale to launching and getting first customers: launch plans and channels, first users, cold outreach and emails, and unscalable early tactics. Use when someone plans or reviews a launch or early customer acquisition, or asks for the module 5 workbook."
 ---
 
 # YC Startup School — Module 5: Launching
 
-## Official Curriculum
+Match the launch or acquisition experiment to the customer and learning goal. Complete requested plans or drafts; advice about outreach does not authorize sending messages or publishing.
 
-- 📺 **How to Launch (Again and Again)** — Kat Mañalac (YC Partner) ✅ transcript as `the-best-way-to-launch-your-startup.md`
-- 📺 **How to Get Your First Customers** — Gustaf Alströmer (YC Group Partner) ✅ transcript available
-- 📖 **Do Things That Don't Scale** — Paul Graham ✅ transcript available (also via `/pg` skill)
+## Respond to the request
 
-## Instructions
+- **Question or explanation:** Answer the actual question using relevant source material. Do not start a workbook, score the user, or save a file by default.
+- **Situation review:** Analyze the supplied idea, artifact, or evidence first. Ask only for missing information that materially changes the judgment. Distinguish observations, assumptions, and suggested next steps.
+- **Guided exercise:** When requested, use [the workbook](references/workbook.md). Follow the requested pace and output format rather than imposing an interview on ordinary questions.
 
-1. Read ALL transcript files from `${CLAUDE_PLUGIN_ROOT}/skills/yc-5-launching/references/`:
-   - `the-best-way-to-launch-your-startup.md` — Kat Mañalac (YC Partner)
-   - `how-to-get-your-first-customers.md` — Gustaf Alströmer (YC Group Partner)
-   - `do-things-that-dont-scale.md` — Paul Graham (also via `/pg` skill)
-2. Present key frameworks from each lecture with speaker attribution
-3. Analyze the user's current launch and customer acquisition stage
-4. Generate a workbook-style self-assessment derived from the lectures
-5. Save to `knowledge/yc-startup-school/module-5-assessment.md`
-6. Run the interactive Self-Assessment Workbook:
-   - Ask each question ONE AT A TIME using AskUserQuestion
-   - Wait for the user's response before asking the next question
-   - After each answer, provide brief feedback connecting their response to the module's frameworks
-   - After all questions, synthesize their answers into a personalized assessment
-7. Save the completed assessment (questions + answers + synthesis) to the appropriate knowledge path
+A narrow request is complete when its question or review is answered with supporting evidence and material limits. A broader synthesis may require several sources; a full lecture summary requires reading the full available text. Do not extend a completed answer into additional modules or exercises unless the request calls for them. Do not append an operating plan, implementation steps, or legal or tax mechanics to a narrow question unless the user asked or the answer depends on them; when a legal or tax step matters, say what to confirm with a professional. Ask follow-up questions only when the answer would change the judgment.
 
-## Key Frameworks
+## Find and use evidence
 
-### How to Launch (Again and Again) (Kat Mañalac)
-- **Launch early and often**: Don't wait for a "perfect" product — launching is a learnable, repeatable skill
-- **5 launch types**: Personal network / Community (HN, Product Hunt, Reddit) / Press/media / Social posts / YC Launch (Show HN)
-- **One-sentence pitch**: Must explain what you do in plain English. Test: does a stranger immediately understand the value?
-- **Show HN structure**: What it is + who it's for + what makes it different — in the first sentence
-- **Each launch teaches something different**: Network launch = warm signal, community launch = cold signal, press = brand
+Every source listed below contains its lecture or essay text. If a passage you need is missing or unclear, say so rather than reconstructing the lecture from notes or memory.
 
-### How to Get Your First Customers (Gustaf Alströmer)
-- **Your first 10 users come from manual effort**, not growth hacking — accept this
-- **Where to find them**: Personal network, ex-colleagues, LinkedIn/Slack communities, conferences, cold email
-- **Do things that don't scale first**: Airbnb's Gustaf personally helped hosts improve listings. Stripe's founders manually set up merchant accounts.
-- **Convert early users to evangelists**: Give access before everyone else; respond to feedback immediately; make them feel part of building
-- **Community seeding**: Post in Slack groups, subreddits, and forums where your users already gather
+Choose sources from the source map below by topic. Search for keywords, then read the matching passages with enough surrounding context to interpret them. Expand reading when evidence is incomplete or conflicting. There is no fixed source-count limit or requirement to read every file.
 
-### Do Things That Don't Scale (Paul Graham)
-- **Recruit users manually**: Go find them one by one. This is not embarrassing — it's essential
-- **Build an exceptional experience for a small number of users**, not a mediocre one for many
-- **Learn from manual work**: The understanding gained by doing things yourself cannot be gained any other way
-- **The Stripe example**: Founders asked people at hackathons "wanna try our payment API?" and set up their account on the spot
-- **Consult, then productize**: Doing things manually first tells you what to build
+Attribute each claim to the actual speaker or author, and cite the lecture or essay title with the source URL from the file's frontmatter (`youtube_url` or `source_url`) (add a timestamp for caption sources). Local file paths mean nothing to the user. Check exact wording in the source before quoting, and keep the conditions attached to any number you cite (time period, stage, sample); when answering in another language, keep quotations short and mark translations as yours. Distinguish source advice from your application to the user's circumstances. The user may be founding a company, running a solo or bootstrapped business, or starting a new product inside an existing company; preserve their goals rather than treating YC's assumption of a startup aiming for very fast growth, often venture-funded, as a universal requirement.
 
-## Output Format
+Keep the type of each claim: an example, benchmark, recommendation, definition, or requirement stays what the source made it, with qualifiers such as "say", "ideally", "typical", or "one exception" intact. Do not add exclusive conditions or time limits the source does not state. When you calculate, state the units, period, cohort, and starting point, and recheck derived comparisons as well as headline numbers; keep ratios such as retention distinct from growth rates. Base your application on the user's facts and the sources: state assumptions as conditions, and leave out general claims about markets, law, or tax practice that neither supports. Labeling a statement as your interpretation does not make an unsupported fact acceptable. Before finishing, check that your recommendation and closing verdict keep the qualifications you reported from the source; a correctly qualified quotation does not support an unqualified application, and the sources do not license ranking risks or approving choices they never address.
 
-### Part 1: Module Content
-- The "launch repeatedly" mindset vs. big-bang launch thinking
-- The 5 launch types and when to use each
-- Gustaf's manual first-customer playbook
-- PG's "do things that don't scale" doctrine with specific examples
+[Reading notes](references/reading-notes.md) preserve imported concept summaries for locating themes during broad study. They are secondary aids, not proof of lecture content, current numbers, or mandatory behavior. Prefer the original material and verify changing facts from current primary sources when the answer depends on them.
 
-### Part 2: Apply to Your Situation
-- Current launch status: launched 0 / 1 / many times?
-- Which launch channels are most relevant (B2B vs. B2C, enterprise vs. SMB, developer vs. consumer)?
-- First customer acquisition: what's working and what's missing?
-- "Do things that don't scale" audit: what manual things should be happening right now?
+## Source map
 
-### Part 3: Interactive Workbook (AskUserQuestion)
-- Ask questions ONE AT A TIME — do not list all questions at once
-- Use AskUserQuestion tool for each question
-- After each answer, give 1-2 sentence feedback connecting to the module's framework
-- Provide multiple choice options where appropriate to make it easier to answer
-- After completing all questions, generate a synthesis:
-  - Overall readiness score (1-10) for this module's topic
-  - Top strength identified from answers
-  - Top gap identified from answers
-  - One specific action item
-- Save completed workbook to `knowledge/yc-startup-school/module-5-workbook.md`
+- [the-best-way-to-launch-your-startup.md](references/the-best-way-to-launch-your-startup.md) — Kat Mañalac — launch early and again, the one-sentence pitch and "X for Y" descriptions, launch types (silent, Hacker News, communities), why press is not a growth plan.
+- [how-to-get-your-first-customers.md](references/how-to-get-your-first-customers.md) — Gustaf Alströmer — doing things that don't scale, founder-led sales and outreach emails, the sales funnel, charging the first customer, working backwards from a goal.
+- [do-things-that-dont-scale.md](references/do-things-that-dont-scale.md) — Paul Graham — recruiting users manually, early fragility, delighting users, a deliberately narrow first market, consulting and manual service, why big launches rarely matter.
 
-Questions to ask interactively:
-1. Can you describe your product in one sentence that makes sense to a stranger?
-2. Have you launched at least once? What did you learn from that launch?
-3. Who are the first 10 people you could personally reach out to today (not blast email — personally)?
-4. What's the most manual, unscalable thing you could do right now to get 1 more paying user?
-5. Where do your target customers spend time online (subreddits, Slack groups, forums)?
-6. What communities could you post in this week? What would you say?
-7. Are you responding to early users within hours? What's your feedback loop like?
-8. If you haven't launched yet — what is the smallest thing you could ship and put in front of 3 real people this week?
+## Optional related sources
 
-## Bonus Content
+Read these only when their topic is needed for the request.
 
-The bonus folder contains a cold email tactics lecture relevant to first customer acquisition:
-- `${CLAUDE_PLUGIN_ROOT}/references/bonus/how-to-convert-customers-with-cold-emails.md` — Cold email funnel, subject lines, body structure, follow-up sequences
-
-## References
-
-- `${CLAUDE_PLUGIN_ROOT}/skills/yc-5-launching/references/the-best-way-to-launch-your-startup.md` — Kat Mañalac
-- `${CLAUDE_PLUGIN_ROOT}/skills/yc-5-launching/references/how-to-get-your-first-customers.md` — Gustaf Alströmer
-- `${CLAUDE_PLUGIN_ROOT}/skills/yc-5-launching/references/do-things-that-dont-scale.md` — Paul Graham (also via `/pg` skill)
+A cold email tactics lecture relevant to first customer acquisition:
+- [how-to-convert-customers-with-cold-emails.md](references/how-to-convert-customers-with-cold-emails.md) — Aaron Epstein (YC Group Partner) — warm intros first, mapping the cold-email funnel, finding addresses, raising open and reply rates (subject lines, personalization, follow-ups), example emails.

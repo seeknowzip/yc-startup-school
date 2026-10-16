@@ -1,0 +1,4 @@
+interface:
+  display_name: "YC 1 — Deciding to Start a Startup"
+  short_description: "Decide whether and when to start"
+  default_prompt: "Use $yc-1-deciding-to-start-a-startup to help me decide whether to start my startup now."

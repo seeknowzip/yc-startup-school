@@ -22,7 +22,7 @@ chapters:
   - time: 311
     title: "Startup resilience - Initial motivation isn't important"
   - time: 424
-    title: "As a curious founder ask "What do I have to lose"?"
+    title: "As a curious founder ask \"What do I have to lose\"?"
   - time: 550
     title: "Startup experience can improve your career opportunities"
   - time: 650
