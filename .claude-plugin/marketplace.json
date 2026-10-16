@@ -1,5 +1,5 @@
 {
-  "name": "seeknowzip-yc",
+  "name": "ycombinator-startup-school",
   "owner": {
     "name": "Hojin",
     "url": "https://github.com/seeknowzip"
@@ -7,7 +7,7 @@
   "description": "YC Startup School skills: 8 modules, AI Startup School, and Paul Graham essays.",
   "plugins": [
     {
-      "name": "yc-startup-school",
+      "name": "ycombinator-startup-school",
       "description": "Apply YC Startup School lectures to your own situation, with speaker attribution.",
       "source": "./"
     }

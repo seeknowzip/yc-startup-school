@@ -1,10 +1,8 @@
 # YC Startup School skills
 
-Agent skills that help you apply Y Combinator's Startup School lectures to the work in front of you. Describe your situation or share a plan in Claude Code or Codex, and the agent reads the relevant lectures, applies them to your case, and says which lecture and speaker each point comes from.
+Agent skills that help you apply Y Combinator's Startup School lectures to the work in front of you. Describe your situation or share a plan in Claude Code or Codex, and the agent reads the relevant lectures, applies them to your case, and says which lecture and speaker each point comes from. It is meant for people founding a startup, running a solo or small business, or leading a new product inside a company.
 
-Y Combinator의 Startup School 강의를 지금 하는 일에 적용해볼 수 있도록 만든 에이전트 스킬입니다. Claude Code나 Codex에서 상황이나 계획을 이야기하면, 에이전트가 관련 강의를 읽고 그 상황에 맞춰 짚어주며 어느 강의에서 누가 한 말인지 밝힙니다. 창업을 준비하는 분, 1인·소규모로 사업하는 분, 회사에서 새 제품이나 서비스를 맡은 분 모두 쓸 수 있습니다.
-
-This is a modified version of [team-attention/yc-startup-school](https://github.com/team-attention/yc-startup-school) by Team Attention. See [Changes from the original](#changes-from-the-original).
+This is a modified version of [team-attention/yc-startup-school](https://github.com/team-attention/yc-startup-school) by Team Attention. See [Changes from the original](#changes-from-the-original). It is not affiliated with or endorsed by Y Combinator.
 
 ## Skills
 
@@ -31,16 +29,16 @@ The repository is both a Claude Code plugin marketplace and a Codex plugin marke
 
 ```bash
 claude plugin marketplace add seeknowzip/yc-startup-school
-claude plugin install yc-startup-school@seeknowzip-yc
+claude plugin install ycombinator-startup-school@ycombinator-startup-school
 ```
 
-Inside a Claude Code session, the same steps are `/plugin marketplace add seeknowzip/yc-startup-school` and `/plugin install yc-startup-school@seeknowzip-yc`.
+Inside a Claude Code session, the same steps are `/plugin marketplace add seeknowzip/yc-startup-school` and `/plugin install ycombinator-startup-school@ycombinator-startup-school`.
 
 **Codex**
 
 ```bash
 codex plugin marketplace add seeknowzip/yc-startup-school
-codex plugin add yc-startup-school@seeknowzip-yc
+codex plugin add ycombinator-startup-school@ycombinator-startup-school
 ```
 
 **Without the plugin system** — copy the skill folders into your personal skills directory:
@@ -55,15 +53,15 @@ mkdir -p ~/.agents/skills && cp -R yc-startup-school/skills/* ~/.agents/skills/ 
 
 Describe your situation in plain language; the agent picks the matching skill. You can also call a skill directly:
 
-- Claude Code plugin: `/yc-startup-school:yc-4-planning-an-mvp` (type `/yc-4` and pick it from the list). Copied skills are `/yc-4-planning-an-mvp`.
+- Claude Code plugin: `/ycombinator-startup-school:yc-4-planning-an-mvp` (type `/yc-4` and pick it from the list). Copied skills are `/yc-4-planning-an-mvp`.
 - Codex: `$yc-4-planning-an-mvp` (type `$` to pick a skill).
 
-Example requests / 이렇게 물어보세요:
+Example requests (ask in any language):
 
-- "친구랑 둘이 창업하는데 지분을 50:50으로 나눠도 될까?"
-- "회사에서 새 기능 MVP 범위를 이렇게 잡았는데 봐줘: …"
-- "혼자 하는 SaaS인데 어떤 지표를 봐야 할까?"
-- "모듈 4 워크북 같이 해줘"
+- "My friend and I are starting a company. Is a 50:50 equity split OK?"
+- "Review the MVP scope I set for a new feature at work: …"
+- "I run a SaaS on my own. Which metrics should I track?"
+- "Walk me through the module 4 workbook."
 - "Apply Paul Graham's Do Things That Don't Scale to my 40-customer subscription business."
 
 ## How the skills respond
