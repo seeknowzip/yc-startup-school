@@ -56,7 +56,7 @@ Describe your situation in plain language; the agent picks the matching skill. Y
 - Claude Code plugin: `/ycombinator-startup-school:yc-4-planning-an-mvp` (type `/yc-4` and pick it from the list). Copied skills are `/yc-4-planning-an-mvp`.
 - Codex: `$yc-4-planning-an-mvp` (type `$` to pick a skill).
 
-Example requests (ask in any language):
+Example requests:
 
 - "My friend and I are starting a company. Is a 50:50 equity split OK?"
 - "Review the MVP scope I set for a new feature at work: …"
